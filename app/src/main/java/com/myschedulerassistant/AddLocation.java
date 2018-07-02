@@ -180,6 +180,7 @@ public class AddLocation extends AppCompatActivity {
                     }
                     Toast.makeText(AddLocation.this, "Schedule Added", Toast.LENGTH_LONG).show();
 
+                    Toast.makeText(AddLocation.this,"Hello Shwetha",Toast.LENGTH_LONG).show();
                     finish();
                     break;
             }
