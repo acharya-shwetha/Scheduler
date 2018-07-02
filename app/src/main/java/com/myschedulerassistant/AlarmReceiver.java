@@ -80,8 +80,6 @@ public class AlarmReceiver extends BroadcastReceiver {
             }
             Toast.makeText(context, "distance " + distanceAndDuration[0] + " Time " + distanceAndDuration[1], Toast.LENGTH_SHORT).show();
 
-            //Toast.makeText(context,"Hello Shwetha",Toast.LENGTH_LONG).show();
-
             if (distanceAndDuration[1] > 0) {
                 Log.i("AlarmRec", "comparing times " + distanceAndDuration[1] + " and current time " + currentTime + " scheduled time " + tasks.get(0).getDateTime());
                 if (distanceAndDuration[1] + 10 >= ((tasks.get(0).getDateTime().getTime() - currentTime) / 60000)) {
